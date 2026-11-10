@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101820">
+<meta name="description" content="Lời chúc 19/11 từ Chuyên Hạ Long — 36 tập thể, một vườn trái tim.">
+<title>19.11 — Chuyên Hạ Long</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scene-bg" aria-hidden="true"><span class="nebula nebula-one"></span><span class="nebula nebula-two"></span><div class="stars" id="stars"></div></div>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Về đầu trang"><span class="brand-symbol">19</span><span><b>CHUYÊN HẠ LONG</b><small>19 · 11 · 2026</small></span></a>
+  <nav aria-label="Điều hướng chính"><a href="#film">Thước phim</a><a href="#heartArchive">Vườn trái tim</a></nav>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển giao diện" title="Chuyển giao diện">☼</button>
+</header>
+<main id="home">
+  <section class="film-first wrap" id="film">
+    <div class="film-intro">
+      <p class="eyebrow"><span></span> A SHARED MEMORY · 19.11.2026</p>
+      <h1>Một thước phim.<br><em>Một thời thanh xuân.</em></h1>
+      <p class="film-lead">Lời nhắn gửi từ Chuyên Hạ Long.</p>
+    </div>
+    <div class="featured-media panel">
+      <div class="viewer-stage" id="memoryStage">
+        <div class="viewer-empty" id="memoryEmpty"><span class="empty-icon">▶</span><b>Thước phim sẽ bắt đầu tại đây</b><small>Một video duy nhất · Chuyên Hạ Long 19.11</small></div>
+        <video id="memoryPlayer" controls playsinline preload="metadata" hidden></video>
+        <span class="viewer-tag">19.11 <i>·</i> CHUYÊN HẠ LONG</span>
+        <span class="viewer-corner">THE MAIN FILM <b>01 / 01</b></span>
+      </div>
+      <div class="viewer-caption"><div><b id="mediaName">THƯỚC PHIM 19/11</b><small id="mediaMeta">Video sẽ được cập nhật sau.</small></div><span>ONE FILM ONLY</span></div>
+    </div>
+    <div class="after-film-prompt" id="afterFilmPrompt">
+      <span class="prompt-spark">✳</span>
+      <div><strong>Xem xong thước phim, hãy ghé thăm Vườn Trái Tim nhé.</strong><small>36 tập thể · 36 lời nhắn · Một món quà chung từ Chuyên Hạ Long</small></div>
+      <a href="#heartArchive" class="garden-button">KHÁM PHÁ VƯỜN TRÁI TIM <span>↓</span></a>
+    </div>
+  </section>
+
+  <section class="heart-section wrap" id="heartArchive">
+    <div class="garden-heading">
+      <div><p class="eyebrow">THE HEART GARDEN · 02</p><h2>Vườn <em>Trái Tim.</em></h2><p class="section-subtitle">Mỗi tập thể là một trái tim. Chạm để mở lời chúc dành riêng cho lớp mình.</p></div>
+      <div class="garden-mark"><span>36</span><small>LETTERS<br>TO KEEP</small></div>
+    </div>
+    <div class="heart-tools">
+      <div class="grade-tabs" role="group" aria-label="Lọc theo khối">
+        <button class="grade-tab active" data-grade="all" type="button" aria-pressed="true">Tất cả</button>
+        <button class="grade-tab" data-grade="10" type="button" aria-pressed="false">Khối 10</button>
+        <button class="grade-tab" data-grade="11" type="button" aria-pressed="false">Khối 11</button>
+        <button class="grade-tab" data-grade="12" type="button" aria-pressed="false">Khối 12</button>
+      </div>
+      <label class="search-box"><span>⌕</span><input id="heartSearch" type="search" placeholder="Tìm lớp: 10 Toán, 11 Anh 2..." autocomplete="off" aria-label="Tìm lớp"><button id="clearSearch" type="button" aria-label="Xóa tìm kiếm" hidden>×</button></label>
+    </div>
+    <div class="heart-board">
+      <div class="heart-canvas-wrap"><div class="heart-canvas" id="heartCanvas" aria-label="36 trái tim tương tác"></div><p class="heart-hint"><span>✦</span> Chạm vào một trái tim để mở thư</p></div>
+      <aside class="heart-info"><div class="info-number">36</div><p class="eyebrow">CHUYÊN HẠ LONG</p><h3>Ba khối lớp.<br>Một vườn thương mến.</h3><p>12 tập thể mỗi khối — mỗi lá thư mang một giọng điệu và lời chúc riêng.</p><button class="random-button" id="randomLetter" type="button">Mở một lá thư bất kỳ <span>↗</span></button></aside>
+    </div>
+    <p class="search-empty" id="searchEmpty" hidden>Không tìm thấy lớp phù hợp.</p>
+    <div class="garden-foot"><span>36 CLASS COMMUNITIES</span><span>MADE TO BE REMEMBERED <b>✳</b></span></div>
+  </section>
+</main>
+<footer class="footer"><a class="brand" href="#home"><span class="brand-symbol">19</span><span><b>CHUYÊN HẠ LONG</b><small>19 · 11 · 2026</small></span></a><span>36 LỚP · MỘT TRÁI TIM</span></footer>
+
+<div class="film-finale" id="filmFinale" aria-hidden="true">
+  <div class="finale-orbit"></div><div class="finale-orbit finale-orbit-two"></div>
+  <span class="finale-kicker">THE FILM HAS ENDED · THE MEMORIES REMAIN</span>
+  <div class="finale-heart">♥</div>
+  <h2>Xem xong thước phim,<br><em>hãy khám phá Vườn Trái Tim.</em></h2>
+  <p>36 tập thể đang chờ bạn mở lời nhắn.</p>
+  <button id="finaleExplore" type="button">BƯỚC VÀO VƯỜN TRÁI TIM <span>↓</span></button>
+  <button class="finale-close" id="finaleClose" type="button" aria-label="Đóng">×</button>
+</div>
+
+<dialog class="letter-dialog" id="letterDialog" aria-labelledby="dialogTitle">
+  <button class="dialog-close" id="closeDialog" type="button" aria-label="Đóng">×</button>
+  <div class="letter-content"><span class="dialog-symbol">♡</span><p class="eyebrow" id="dialogGrade">KHỐI 10</p><h2 id="dialogTitle">10 Toán</h2><div class="dialog-rule"></div><p id="dialogCopy"></p><span class="dialog-date">19.11.2026 · CHUYÊN HẠ LONG</span></div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>
